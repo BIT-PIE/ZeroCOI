@@ -1,0 +1,9 @@
+[submodule "SDS/videocrafter"]
+	path = SDS/videocrafter
+	url = https://github.com/AILab-CVC/VideoCrafter.git
+[submodule "BITE"]
+	path = BITE
+	url = https://github.com/runa91/bite_release.git
+[submodule "DigiDogs"]
+	path = DigiDogs
+	url = https://github.com/mshooter/DigiDogs_release.git

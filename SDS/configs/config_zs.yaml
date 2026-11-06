@@ -1,0 +1,13 @@
+guidance_type_video: "SDS.guidance.zeroscope_guidance.ZeroscopeGuidance"
+guidance_video:
+  pretrained_model_name_or_path: "cerspense/zeroscope_v2_576w"
+  guidance_scale: 100.
+  motion_amp_scale: 1.
+  weighting_strategy: sds
+  min_step_percent: [0, 0.02, 0.02, 15000] 
+  max_step_percent: [0, 0.98, 0.5, 15000]
+  device: "cuda"
+  negative_prompt: ""
+  half_precision_weights: false
+  rgb_as_latents: false
+  low_ram_vae: 8

@@ -1,0 +1,18 @@
+guidance_type_video: "SDS.guidance.videocrafter_guidance.VideoCrafterGuidance"
+guidance_video:
+  config: SDS/videocrafter/configs/inference_t2v_512_v2.0.yaml
+  pretrained_model_name_or_path: "VideoCrafter/VideoCrafter2"
+  guidance_scale: 100.
+  weighting_strategy: sds
+  width_vid: 128
+  height_vid: 80
+  motion_amp_scale: 30.
+  half_precision_weights: false
+  fps: 8
+  min_step_percent: [0, 0.02, 0.02, 15000] 
+  max_step_percent: [0, 0.98, 0.5, 15000]
+  negative_prompt: ""
+  device: "cuda"
+  rgb_as_latents: false
+  # Set a number between 1 and 16, this saves memory by only backpropagating through low_ram_vae number of frames instead of all 16
+  low_ram_vae: 8
